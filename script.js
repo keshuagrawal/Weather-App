@@ -50,6 +50,10 @@ function runPrograme() {
       input.value = ''
       input.placeholder = err.message = 'City Not Found'
       input.classList.add('new-placeholder')
+      setTimeout(() => {
+        input.classList.remove('new-placeholder')
+        input.placeholder = 'Enter Your City Name'
+      }, 2000);
     })
 }
 
